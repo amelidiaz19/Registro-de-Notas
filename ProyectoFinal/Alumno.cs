@@ -22,6 +22,6 @@ namespace ProyectoFinal
         public float exam2 { get; set; }
         public float parcial { get; set; }
         public float final { get; set; }
-        public float promedio { get; set; }
+        public float promedio { get; set; }        
     }
 }
