@@ -72,6 +72,7 @@ namespace ProyectoFinal
         {
             if (File.Exists(ruta))
             {
+
                 string[] datos = new string[12];
                 string registro = "";
 
