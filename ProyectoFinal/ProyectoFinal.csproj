@@ -164,7 +164,6 @@
     <Content Include="bin\Debug\5to secundaria.txt" />
     <Content Include="bin\Debug\ProyectoFinal.exe" />
     <Content Include="bin\Debug\ProyectoFinal.pdb" />
-    <Content Include="bin\Debug\SeccionAleatorio.txt" />
     <Content Include="obj\Debug\ProyectoFinal.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\ProyectoFinal.exe" />
     <Content Include="obj\Debug\ProyectoFinal.pdb" />
