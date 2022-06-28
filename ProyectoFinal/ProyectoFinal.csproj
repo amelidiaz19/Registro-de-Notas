@@ -71,6 +71,7 @@
     <Compile Include="Estadisticas.Designer.cs">
       <DependentUpon>Estadisticas.cs</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Opciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +105,14 @@
     <EmbeddedResource Include="Estadisticas.resx">
       <DependentUpon>Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ProyectoFinal.Borrar.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoFinal.Buscar.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoFinal.EditarNotas.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoFinal.Estadisticas.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoFinal.Opciones.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoFinal.Principal.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoFinal.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoFinal.Registro.resources" />
     <EmbeddedResource Include="Opciones.resx">
       <DependentUpon>Opciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +131,13 @@
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\ProyectoFinal.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ProyectoFinal.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\ProyectoFinal.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\ProyectoFinal.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\ProyectoFinal.csproj.SuggestedBindingRedirects.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -136,8 +152,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Archivos\" />
+    <Folder Include="bin\Release\" />
     <Folder Include="Imagenes\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\1ro secundaria.txt" />
+    <Content Include="bin\Debug\2do secundaria.txt" />
+    <Content Include="bin\Debug\3ro secundaria.txt" />
+    <Content Include="bin\Debug\4to secundaria.txt" />
+    <Content Include="bin\Debug\5to secundaria.txt" />
+    <Content Include="bin\Debug\ProyectoFinal.exe" />
+    <Content Include="bin\Debug\ProyectoFinal.pdb" />
+    <Content Include="obj\Debug\ProyectoFinal.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ProyectoFinal.exe" />
+    <Content Include="obj\Debug\ProyectoFinal.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

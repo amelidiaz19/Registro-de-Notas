@@ -1,3 +1,0 @@
-26/06/2022 | Ingles | ddd | ddd | ddd | B | Edalyn C. | Tarde | 17 | 14 | 12 | 10 | 12.25
-26/06/2022 | Comunicación | eee | eee | eee | B | Amity B. | Mañana | 15 | 10 | 20 | 17 | 16.55
-26/06/2022 | Educación Física | fff | fff | fff | A | Willow P. | Tarde | 18 | 19 | 20 | 10 | 15.55
