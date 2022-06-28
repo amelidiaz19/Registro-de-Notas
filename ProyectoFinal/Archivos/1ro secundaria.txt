@@ -1,0 +1,3 @@
+28/06/2022 | Comunicación | aaa | aaa | aaa | D | Amity B. | Tarde | 12 | 11 | 10 | 09 | 10.05
+28/06/2022 | Matemática | bbb | bbb | bbb | B | Luz N. | Mañana | 10 | 11 | 12 | 13 | 11.95
+28/06/2022 | Ingles | ccc | ccc | ccc | D | Edalyn C. | Mañana | 14 | 15 | 16 | 17 | 15.95
