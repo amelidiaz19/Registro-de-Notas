@@ -240,7 +240,8 @@
             this.cbOrdenar.FormattingEnabled = true;
             this.cbOrdenar.Items.AddRange(new object[] {
             "Ascendente",
-            "Descendente"});
+            "Descendente",
+            "Sumar Notas"});
             this.cbOrdenar.Location = new System.Drawing.Point(1100, 67);
             this.cbOrdenar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbOrdenar.Name = "cbOrdenar";

@@ -453,15 +453,41 @@ namespace ProyectoFinal
         //Aplicar metodo burbuja
         private void btnAplicar_Click(object sender, EventArgs e)
         {    
-            if(des_asc == "descendente")
+            if(cbOrdenar.Text == "Descendente")
             {
                 Descendente();
             }
-            else if(des_asc == "ascendente")
+            else if(cbOrdenar.Text == "Ascendente")
             {
                 Ascendente();
             }
+            else if(cbOrdenar.Text == "Sumar Notas")
+            {
+                //int fila = dataGridViewNotas.Rows.Count;
+                //double[] num = new double[fila];
+                //double[] num2 = new double[fila];
+                //double[] elec = new double[fila];
+                //double sum = 0;
+                ////string aula = cbSeccion.Text;
+                //for (int i = 0; i <= fila - 1; i++)
+                //{
+                //    num[i] = double.Parse(dataGridViewNotas.Rows[i].Cells[12].Value.ToString());
+                //}
+
+                //sum = Suma(0, num);
+
+                //MessageBox.Show(Convert.ToString(sum));
+            }
         }
+
+        //public double Suma(int a, double[] b)
+        //{
+        //    if (a == b.Length - 1) return 0;
+        //    else
+        //    {
+        //        return b[a] + Suma(a + 1, b);
+        //    }
+        //}
 
         //Posicion datagridview
         private void dataGridViewNotas_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
