@@ -43,8 +43,6 @@
             this.btn5to = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn4to = new System.Windows.Forms.Button();
-            this.panelAbrir = new System.Windows.Forms.Panel();
-            this.btnAbrir = new System.Windows.Forms.Button();
             this.lbFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
@@ -161,8 +159,6 @@
             this.panel5.Controls.Add(this.btn5to);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.btn4to);
-            this.panel5.Controls.Add(this.panelAbrir);
-            this.panel5.Controls.Add(this.btnAbrir);
             this.panel5.Controls.Add(this.panel1);
             this.panel5.Controls.Add(this.panel2);
             this.panel5.Controls.Add(this.panel3);
@@ -226,32 +222,6 @@
             this.btn4to.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn4to.UseVisualStyleBackColor = true;
             this.btn4to.Click += new System.EventHandler(this.btn4to_Click);
-            // 
-            // panelAbrir
-            // 
-            this.panelAbrir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.panelAbrir.Location = new System.Drawing.Point(0, 453);
-            this.panelAbrir.Name = "panelAbrir";
-            this.panelAbrir.Size = new System.Drawing.Size(10, 73);
-            this.panelAbrir.TabIndex = 115;
-            // 
-            // btnAbrir
-            // 
-            this.btnAbrir.FlatAppearance.BorderSize = 0;
-            this.btnAbrir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbrir.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbrir.ForeColor = System.Drawing.Color.White;
-            this.btnAbrir.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrir.Image")));
-            this.btnAbrir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbrir.Location = new System.Drawing.Point(0, 453);
-            this.btnAbrir.Name = "btnAbrir";
-            this.btnAbrir.Size = new System.Drawing.Size(342, 73);
-            this.btnAbrir.TabIndex = 114;
-            this.btnAbrir.Text = "Registro";
-            this.btnAbrir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAbrir.UseVisualStyleBackColor = true;
-            this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
             // 
             // lbFecha
             // 
@@ -330,8 +300,6 @@
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panelAbrir;
-        private System.Windows.Forms.Button btnAbrir;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btn5to;
         private System.Windows.Forms.Panel panel6;
