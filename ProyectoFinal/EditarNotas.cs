@@ -22,6 +22,8 @@ namespace ProyectoFinal
 
             ruta = rutaprincipal;
 
+            btnAplicar.Enabled = false;
+
             txtCurso.Enabled = false;
             txtPaterno.Enabled = false;
             txtMaterno.Enabled = false;
@@ -70,7 +72,7 @@ namespace ProyectoFinal
 
             try
             {
-                if(validacion.Vacio(txtCurso.Text)) { throw new Exception("No puede estar vacio."); }
+                if (validacion.Vacio(txtCurso.Text)) { throw new Exception("No puede estar vacio."); }
                 if (validacion.Vacio(txtPaterno.Text)) { throw new Exception("No puede estar vacio."); }
                 if (validacion.Vacio(txtMaterno.Text)) { throw new Exception("No puede estar vacio."); }
                 if (validacion.Vacio(txtNombre.Text)) { throw new Exception("No puede estar vacio."); }
@@ -94,7 +96,7 @@ namespace ProyectoFinal
                 if (validacion.SoloNumeros(txtExamen1.Text)) { throw new Exception("Solo numeros."); }
                 if (validacion.Rango(txtExamen1.Text)) { throw new Exception("Solo numeros de 0 a 20."); }
             }
-            catch (Exception ex){ errorProvider.SetError(txtExamen1, ex.Message);flag = false; }
+            catch (Exception ex) { errorProvider.SetError(txtExamen1, ex.Message); flag = false; }
 
             try
             {
@@ -123,7 +125,7 @@ namespace ProyectoFinal
                 respuesta = MessageBox.Show("¿Está seguro de modificar los datos?", "¡Alerta!", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 int posicion = dataGridViewNotas.CurrentRow.Index;
 
-                if(respuesta == DialogResult.OK)
+                if (respuesta == DialogResult.OK)
                 {
 
                     string fecha = dataGridViewNotas.Rows[posicion].Cells[0].Value.ToString();
@@ -340,8 +342,8 @@ namespace ProyectoFinal
                              datos[12].Trim());
             }
 
-            leer.Close(); 
-            
+            leer.Close();
+
         }
 
         //Ver registro
@@ -386,21 +388,21 @@ namespace ProyectoFinal
             }
         }
 
-        public string des_asc = "";
-
         //Ascendente o descendente combobox
         private void cbOrdenar_SelectedIndexChanged(object sender, EventArgs e)
         {
             int indice = cbOrdenar.SelectedIndex;
 
-            if (indice.ToString() == "0") // As
+            if (indice.ToString() == "0") // Des
             {
-                des_asc = "descendente";
                 btnAplicar.Enabled = true;
             }
-            else if (indice.ToString() == "1") //Asc
+            else if (indice.ToString() == "1") // Asc
             {
-                des_asc = "ascendente";
+                btnAplicar.Enabled = true;
+            }
+            else if(indice.ToString() == "1") //Suma
+            {
                 btnAplicar.Enabled = true;
             }
         }
@@ -452,42 +454,47 @@ namespace ProyectoFinal
 
         //Aplicar metodo burbuja
         private void btnAplicar_Click(object sender, EventArgs e)
-        {    
-            if(cbOrdenar.Text == "Descendente")
+        {
+            if (cbOrdenar.Text == "Descendente")
             {
                 Descendente();
             }
-            else if(cbOrdenar.Text == "Ascendente")
+            else if (cbOrdenar.Text == "Ascendente")
             {
                 Ascendente();
             }
-            else if(cbOrdenar.Text == "Sumar Notas")
+            else if (cbOrdenar.Text == "Sumar Notas")
             {
-                //int fila = dataGridViewNotas.Rows.Count;
-                //double[] num = new double[fila];
-                //double[] num2 = new double[fila];
-                //double[] elec = new double[fila];
-                //double sum = 0;
-                ////string aula = cbSeccion.Text;
-                //for (int i = 0; i <= fila - 1; i++)
-                //{
-                //    num[i] = double.Parse(dataGridViewNotas.Rows[i].Cells[12].Value.ToString());
-                //}
-
-                //sum = Suma(0, num);
-
-                //MessageBox.Show(Convert.ToString(sum));
+                SumaNotas();
             }
         }
 
-        //public double Suma(int a, double[] b)
-        //{
-        //    if (a == b.Length - 1) return 0;
-        //    else
-        //    {
-        //        return b[a] + Suma(a + 1, b);
-        //    }
-        //}
+        public void SumaNotas()
+        {
+            int longitud = dataGridViewNotas.RowCount;
+
+            float[] num = new float[longitud];
+            float suma = 0;
+
+            for (int i = 0; i < longitud; i++)
+            {
+                num[i] = float.Parse(dataGridViewNotas.Rows[i].Cells[12].Value.ToString());
+            }
+
+            suma = RecursividadSuma(0, num);
+
+            //promedio grado
+            MessageBox.Show("El promedio del grado es: " + (suma / longitud).ToString("0.00"), "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public float RecursividadSuma(int a, float [] b)
+        {
+            if (a >= b.Length) return 0;
+            else
+            {
+                return b[a] + RecursividadSuma(a + 1, b);
+            }
+        }
 
         //Posicion datagridview
         private void dataGridViewNotas_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
