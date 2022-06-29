@@ -401,7 +401,7 @@ namespace ProyectoFinal
             {
                 btnAplicar.Enabled = true;
             }
-            else if(indice.ToString() == "1") //Suma
+            else if(indice.ToString() == "2") //Suma
             {
                 btnAplicar.Enabled = true;
             }
