@@ -527,6 +527,7 @@
             this.Controls.Add(this.btnCargarDatosOp);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRegistrarOp);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Registro";
             this.Text = "Registro";

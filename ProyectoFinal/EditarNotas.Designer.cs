@@ -674,6 +674,7 @@
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.btnNotas);
             this.Controls.Add(this.btnAgregarNotas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EditarNotas";
             this.Text = "Editar Notas";

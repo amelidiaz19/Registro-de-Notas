@@ -288,6 +288,7 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Principal";
             this.Text = "Menu";
             this.panel4.ResumeLayout(false);

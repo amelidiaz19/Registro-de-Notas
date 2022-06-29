@@ -412,6 +412,7 @@
             this.Controls.Add(this.IconMin);
             this.Controls.Add(this.dataGridViewState);
             this.Controls.Add(this.groupBox6);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Estadisticas";
             this.Text = "Estadisticas";
             this.groupBox6.ResumeLayout(false);

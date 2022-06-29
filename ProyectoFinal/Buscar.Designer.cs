@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Buscar));
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cbBuscarSegun = new System.Windows.Forms.ComboBox();
@@ -313,8 +313,8 @@
             // 
             // promedio
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.promedio.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
+            this.promedio.DefaultCellStyle = dataGridViewCellStyle1;
             this.promedio.HeaderText = "Promedio";
             this.promedio.MinimumWidth = 6;
             this.promedio.Name = "promedio";
@@ -679,6 +679,7 @@
             this.Controls.Add(this.panelacciones1);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.groupBox4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Buscar";
             this.Text = "Buscar";
