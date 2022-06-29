@@ -35,6 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.IconExit = new System.Windows.Forms.PictureBox();
             this.IconMin = new System.Windows.Forms.PictureBox();
             this.lblGrado = new System.Windows.Forms.Label();
@@ -72,6 +73,7 @@
             this.docente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.turno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
@@ -82,6 +84,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
+            this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.IconExit);
             this.panel1.Controls.Add(this.IconMin);
             this.panel1.Controls.Add(this.lblGrado);
@@ -91,6 +94,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1445, 69);
             this.panel1.TabIndex = 2;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(1271, 9);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(44, 51);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 147;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // IconExit
             // 
@@ -221,7 +235,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1403, 236);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Registrar Alumno";
+            this.groupBox1.Text = "Información del Alumno";
             // 
             // panel13
             // 
@@ -518,6 +532,7 @@
             this.Text = "Registro";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
@@ -566,5 +581,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn seccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn docente;
         private System.Windows.Forms.DataGridViewTextBoxColumn turno;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

@@ -41,6 +41,7 @@
             this.btnEstadisticas = new System.Windows.Forms.Button();
             this.IconExit = new System.Windows.Forms.PictureBox();
             this.IconMin = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -48,6 +49,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -206,6 +208,17 @@
             this.IconMin.TabIndex = 120;
             this.IconMin.TabStop = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(816, 12);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(44, 51);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 146;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
             // Opciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -213,6 +226,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(972, 541);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.IconExit);
             this.Controls.Add(this.IconMin);
             this.Controls.Add(this.btnEstadisticas);
@@ -234,6 +248,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,5 +267,6 @@
         private System.Windows.Forms.Button btnEstadisticas;
         private System.Windows.Forms.PictureBox IconExit;
         private System.Windows.Forms.PictureBox IconMin;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

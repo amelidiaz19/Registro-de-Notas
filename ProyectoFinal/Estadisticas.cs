@@ -199,5 +199,13 @@ namespace ProyectoFinal
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Podrás ver el total de alumnos en el sistema.\n\n" +
+                            "* Botón 'Ver Registro': Ver el registro completo.\n" +
+                            "* Botón 'Ver Aprobados': Cantidad de alumnos aprobados y ver quienes son.\n" +
+                            "* Botón 'Ver Desaprobados': Cantidad de alumnos desaprobados y ver quienes son.", "Información");
+        }
     }
 }

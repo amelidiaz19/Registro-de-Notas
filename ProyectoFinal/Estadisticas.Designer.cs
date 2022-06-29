@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estadisticas));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estadisticas));
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
             this.txtTotalAlumnos = new System.Windows.Forms.TextBox();
@@ -38,14 +38,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridViewState = new System.Windows.Forms.DataGridView();
-            this.IconExit = new System.Windows.Forms.PictureBox();
-            this.IconMin = new System.Windows.Forms.PictureBox();
-            this.panelacciones1 = new System.Windows.Forms.Panel();
-            this.panelacciones2 = new System.Windows.Forms.Panel();
-            this.btnDesaprobados = new System.Windows.Forms.Button();
-            this.btnAprobados = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnNotas = new System.Windows.Forms.Button();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,10 +51,20 @@
             this.parcial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.final = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.promedio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IconExit = new System.Windows.Forms.PictureBox();
+            this.IconMin = new System.Windows.Forms.PictureBox();
+            this.panelacciones1 = new System.Windows.Forms.Panel();
+            this.panelacciones2 = new System.Windows.Forms.Panel();
+            this.btnDesaprobados = new System.Windows.Forms.Button();
+            this.btnAprobados = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnNotas = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewState)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox6
@@ -82,7 +84,7 @@
             this.groupBox6.Size = new System.Drawing.Size(759, 407);
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Estadísticas";
+            this.groupBox6.Text = "Información";
             // 
             // label19
             // 
@@ -171,109 +173,6 @@
             this.dataGridViewState.RowTemplate.Height = 24;
             this.dataGridViewState.Size = new System.Drawing.Size(1475, 405);
             this.dataGridViewState.TabIndex = 9;
-            // 
-            // IconExit
-            // 
-            this.IconExit.Image = ((System.Drawing.Image)(resources.GetObject("IconExit.Image")));
-            this.IconExit.Location = new System.Drawing.Point(1451, 12);
-            this.IconExit.Name = "IconExit";
-            this.IconExit.Size = new System.Drawing.Size(44, 51);
-            this.IconExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IconExit.TabIndex = 142;
-            this.IconExit.TabStop = false;
-            this.IconExit.Click += new System.EventHandler(this.IconExit_Click);
-            // 
-            // IconMin
-            // 
-            this.IconMin.Image = ((System.Drawing.Image)(resources.GetObject("IconMin.Image")));
-            this.IconMin.Location = new System.Drawing.Point(1401, 12);
-            this.IconMin.Name = "IconMin";
-            this.IconMin.Size = new System.Drawing.Size(44, 51);
-            this.IconMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IconMin.TabIndex = 141;
-            this.IconMin.TabStop = false;
-            this.IconMin.Click += new System.EventHandler(this.IconMin_Click);
-            // 
-            // panelacciones1
-            // 
-            this.panelacciones1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.panelacciones1.Location = new System.Drawing.Point(1481, 275);
-            this.panelacciones1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelacciones1.Name = "panelacciones1";
-            this.panelacciones1.Size = new System.Drawing.Size(13, 73);
-            this.panelacciones1.TabIndex = 148;
-            // 
-            // panelacciones2
-            // 
-            this.panelacciones2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.panelacciones2.Location = new System.Drawing.Point(1481, 352);
-            this.panelacciones2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelacciones2.Name = "panelacciones2";
-            this.panelacciones2.Size = new System.Drawing.Size(13, 73);
-            this.panelacciones2.TabIndex = 145;
-            // 
-            // btnDesaprobados
-            // 
-            this.btnDesaprobados.FlatAppearance.BorderSize = 0;
-            this.btnDesaprobados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.btnDesaprobados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDesaprobados.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDesaprobados.ForeColor = System.Drawing.Color.White;
-            this.btnDesaprobados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDesaprobados.Location = new System.Drawing.Point(1143, 352);
-            this.btnDesaprobados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDesaprobados.Name = "btnDesaprobados";
-            this.btnDesaprobados.Size = new System.Drawing.Size(351, 73);
-            this.btnDesaprobados.TabIndex = 147;
-            this.btnDesaprobados.Text = "Ver Desaprobados";
-            this.btnDesaprobados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDesaprobados.UseVisualStyleBackColor = true;
-            this.btnDesaprobados.Click += new System.EventHandler(this.btnDesaprobados_Click);
-            // 
-            // btnAprobados
-            // 
-            this.btnAprobados.FlatAppearance.BorderSize = 0;
-            this.btnAprobados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.btnAprobados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAprobados.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAprobados.ForeColor = System.Drawing.Color.White;
-            this.btnAprobados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAprobados.Location = new System.Drawing.Point(1143, 275);
-            this.btnAprobados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAprobados.Name = "btnAprobados";
-            this.btnAprobados.Size = new System.Drawing.Size(351, 73);
-            this.btnAprobados.TabIndex = 146;
-            this.btnAprobados.Text = "Ver Aprobados";
-            this.btnAprobados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAprobados.UseVisualStyleBackColor = true;
-            this.btnAprobados.Click += new System.EventHandler(this.btnAprobados_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.panel1.Location = new System.Drawing.Point(1481, 198);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(13, 73);
-            this.panel1.TabIndex = 150;
-            // 
-            // btnNotas
-            // 
-            this.btnNotas.FlatAppearance.BorderSize = 0;
-            this.btnNotas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.btnNotas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotas.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNotas.ForeColor = System.Drawing.Color.White;
-            this.btnNotas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotas.Location = new System.Drawing.Point(1143, 198);
-            this.btnNotas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnNotas.Name = "btnNotas";
-            this.btnNotas.Size = new System.Drawing.Size(352, 73);
-            this.btnNotas.TabIndex = 149;
-            this.btnNotas.Text = "Ver Registro";
-            this.btnNotas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNotas.UseVisualStyleBackColor = true;
-            this.btnNotas.Click += new System.EventHandler(this.btnNotas_Click);
             // 
             // fecha
             // 
@@ -381,6 +280,120 @@
             this.promedio.ReadOnly = true;
             this.promedio.Width = 125;
             // 
+            // IconExit
+            // 
+            this.IconExit.Image = ((System.Drawing.Image)(resources.GetObject("IconExit.Image")));
+            this.IconExit.Location = new System.Drawing.Point(1451, 12);
+            this.IconExit.Name = "IconExit";
+            this.IconExit.Size = new System.Drawing.Size(44, 51);
+            this.IconExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconExit.TabIndex = 142;
+            this.IconExit.TabStop = false;
+            this.IconExit.Click += new System.EventHandler(this.IconExit_Click);
+            // 
+            // IconMin
+            // 
+            this.IconMin.Image = ((System.Drawing.Image)(resources.GetObject("IconMin.Image")));
+            this.IconMin.Location = new System.Drawing.Point(1401, 12);
+            this.IconMin.Name = "IconMin";
+            this.IconMin.Size = new System.Drawing.Size(44, 51);
+            this.IconMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconMin.TabIndex = 141;
+            this.IconMin.TabStop = false;
+            this.IconMin.Click += new System.EventHandler(this.IconMin_Click);
+            // 
+            // panelacciones1
+            // 
+            this.panelacciones1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
+            this.panelacciones1.Location = new System.Drawing.Point(1481, 275);
+            this.panelacciones1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelacciones1.Name = "panelacciones1";
+            this.panelacciones1.Size = new System.Drawing.Size(13, 73);
+            this.panelacciones1.TabIndex = 148;
+            // 
+            // panelacciones2
+            // 
+            this.panelacciones2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
+            this.panelacciones2.Location = new System.Drawing.Point(1481, 352);
+            this.panelacciones2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelacciones2.Name = "panelacciones2";
+            this.panelacciones2.Size = new System.Drawing.Size(13, 73);
+            this.panelacciones2.TabIndex = 145;
+            // 
+            // btnDesaprobados
+            // 
+            this.btnDesaprobados.FlatAppearance.BorderSize = 0;
+            this.btnDesaprobados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
+            this.btnDesaprobados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDesaprobados.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDesaprobados.ForeColor = System.Drawing.Color.White;
+            this.btnDesaprobados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDesaprobados.Location = new System.Drawing.Point(1143, 352);
+            this.btnDesaprobados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDesaprobados.Name = "btnDesaprobados";
+            this.btnDesaprobados.Size = new System.Drawing.Size(351, 73);
+            this.btnDesaprobados.TabIndex = 147;
+            this.btnDesaprobados.Text = "Ver Desaprobados";
+            this.btnDesaprobados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDesaprobados.UseVisualStyleBackColor = true;
+            this.btnDesaprobados.Click += new System.EventHandler(this.btnDesaprobados_Click);
+            // 
+            // btnAprobados
+            // 
+            this.btnAprobados.FlatAppearance.BorderSize = 0;
+            this.btnAprobados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
+            this.btnAprobados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAprobados.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAprobados.ForeColor = System.Drawing.Color.White;
+            this.btnAprobados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAprobados.Location = new System.Drawing.Point(1143, 275);
+            this.btnAprobados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAprobados.Name = "btnAprobados";
+            this.btnAprobados.Size = new System.Drawing.Size(351, 73);
+            this.btnAprobados.TabIndex = 146;
+            this.btnAprobados.Text = "Ver Aprobados";
+            this.btnAprobados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAprobados.UseVisualStyleBackColor = true;
+            this.btnAprobados.Click += new System.EventHandler(this.btnAprobados_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
+            this.panel1.Location = new System.Drawing.Point(1481, 198);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(13, 73);
+            this.panel1.TabIndex = 150;
+            // 
+            // btnNotas
+            // 
+            this.btnNotas.FlatAppearance.BorderSize = 0;
+            this.btnNotas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
+            this.btnNotas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotas.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotas.ForeColor = System.Drawing.Color.White;
+            this.btnNotas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNotas.Location = new System.Drawing.Point(1143, 198);
+            this.btnNotas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNotas.Name = "btnNotas";
+            this.btnNotas.Size = new System.Drawing.Size(352, 73);
+            this.btnNotas.TabIndex = 149;
+            this.btnNotas.Text = "Ver Registro";
+            this.btnNotas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNotas.UseVisualStyleBackColor = true;
+            this.btnNotas.Click += new System.EventHandler(this.btnNotas_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1351, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(44, 51);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 151;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Estadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -388,6 +401,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(1507, 848);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnNotas);
             this.Controls.Add(this.panelacciones1);
@@ -405,6 +419,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewState)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -440,5 +455,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn parcial;
         private System.Windows.Forms.DataGridViewTextBoxColumn final;
         private System.Windows.Forms.DataGridViewTextBoxColumn promedio;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

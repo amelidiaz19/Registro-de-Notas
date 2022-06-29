@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Borrar));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Borrar));
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,11 +50,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.dataGridViewBorrar = new System.Windows.Forms.DataGridView();
-            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.panelacciones1 = new System.Windows.Forms.Panel();
-            this.btnBorrar = new System.Windows.Forms.Button();
-            this.IconExit = new System.Windows.Forms.PictureBox();
-            this.IconMin = new System.Windows.Forms.PictureBox();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,11 +57,18 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.panelacciones1 = new System.Windows.Forms.Panel();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.IconExit = new System.Windows.Forms.PictureBox();
+            this.IconMin = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBorrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox5
@@ -94,7 +96,7 @@
             this.groupBox5.Size = new System.Drawing.Size(937, 246);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Información Alumno";
+            this.groupBox5.Text = "Información del Alumno";
             // 
             // label4
             // 
@@ -259,59 +261,6 @@
             this.dataGridViewBorrar.TabIndex = 124;
             this.dataGridViewBorrar.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewBorrar_CellMouseClick);
             // 
-            // errorProvider
-            // 
-            this.errorProvider.ContainerControl = this;
-            // 
-            // panelacciones1
-            // 
-            this.panelacciones1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.panelacciones1.Location = new System.Drawing.Point(939, 280);
-            this.panelacciones1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelacciones1.Name = "panelacciones1";
-            this.panelacciones1.Size = new System.Drawing.Size(13, 73);
-            this.panelacciones1.TabIndex = 127;
-            // 
-            // btnBorrar
-            // 
-            this.btnBorrar.FlatAppearance.BorderSize = 0;
-            this.btnBorrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBorrar.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.ForeColor = System.Drawing.Color.White;
-            this.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBorrar.Location = new System.Drawing.Point(677, 280);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(275, 73);
-            this.btnBorrar.TabIndex = 128;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBorrar.UseVisualStyleBackColor = true;
-            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click_1);
-            // 
-            // IconExit
-            // 
-            this.IconExit.Image = ((System.Drawing.Image)(resources.GetObject("IconExit.Image")));
-            this.IconExit.Location = new System.Drawing.Point(1020, 14);
-            this.IconExit.Name = "IconExit";
-            this.IconExit.Size = new System.Drawing.Size(44, 51);
-            this.IconExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IconExit.TabIndex = 132;
-            this.IconExit.TabStop = false;
-            this.IconExit.Click += new System.EventHandler(this.IconExit_Click);
-            // 
-            // IconMin
-            // 
-            this.IconMin.Image = ((System.Drawing.Image)(resources.GetObject("IconMin.Image")));
-            this.IconMin.Location = new System.Drawing.Point(970, 14);
-            this.IconMin.Name = "IconMin";
-            this.IconMin.Size = new System.Drawing.Size(44, 51);
-            this.IconMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IconMin.TabIndex = 129;
-            this.IconMin.TabStop = false;
-            this.IconMin.Click += new System.EventHandler(this.IconMin_Click);
-            // 
             // dataGridViewTextBoxColumn2
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
@@ -376,13 +325,78 @@
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             this.dataGridViewTextBoxColumn8.Width = 125;
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
+            // panelacciones1
+            // 
+            this.panelacciones1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
+            this.panelacciones1.Location = new System.Drawing.Point(939, 280);
+            this.panelacciones1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelacciones1.Name = "panelacciones1";
+            this.panelacciones1.Size = new System.Drawing.Size(13, 73);
+            this.panelacciones1.TabIndex = 127;
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.FlatAppearance.BorderSize = 0;
+            this.btnBorrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
+            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrar.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.ForeColor = System.Drawing.Color.White;
+            this.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBorrar.Location = new System.Drawing.Point(677, 280);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(275, 73);
+            this.btnBorrar.TabIndex = 128;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click_1);
+            // 
+            // IconExit
+            // 
+            this.IconExit.Image = ((System.Drawing.Image)(resources.GetObject("IconExit.Image")));
+            this.IconExit.Location = new System.Drawing.Point(1068, 12);
+            this.IconExit.Name = "IconExit";
+            this.IconExit.Size = new System.Drawing.Size(44, 51);
+            this.IconExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconExit.TabIndex = 132;
+            this.IconExit.TabStop = false;
+            this.IconExit.Click += new System.EventHandler(this.IconExit_Click);
+            // 
+            // IconMin
+            // 
+            this.IconMin.Image = ((System.Drawing.Image)(resources.GetObject("IconMin.Image")));
+            this.IconMin.Location = new System.Drawing.Point(1018, 12);
+            this.IconMin.Name = "IconMin";
+            this.IconMin.Size = new System.Drawing.Size(44, 51);
+            this.IconMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconMin.TabIndex = 129;
+            this.IconMin.TabStop = false;
+            this.IconMin.Click += new System.EventHandler(this.IconMin_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(968, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(44, 51);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 145;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Borrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(1076, 839);
+            this.ClientSize = new System.Drawing.Size(1125, 839);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.IconExit);
             this.Controls.Add(this.IconMin);
             this.Controls.Add(this.panelacciones1);
@@ -398,6 +412,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -432,5 +447,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

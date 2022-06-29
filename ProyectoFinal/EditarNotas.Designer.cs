@@ -81,11 +81,13 @@
             this.label23 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnPromedios = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNotas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconMin)).BeginInit();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewNotas
@@ -230,9 +232,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(1095, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 27);
+            this.label2.Size = new System.Drawing.Size(74, 27);
             this.label2.TabIndex = 134;
-            this.label2.Text = "Ordenar";
+            this.label2.Text = "Filtros";
             // 
             // cbOrdenar
             // 
@@ -390,7 +392,7 @@
             this.groupBox5.Size = new System.Drawing.Size(1077, 304);
             this.groupBox5.TabIndex = 141;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Información Alumno";
+            this.groupBox5.Text = "Información del Alumno";
             // 
             // txtPromedio
             // 
@@ -639,6 +641,17 @@
             this.btnPromedios.UseVisualStyleBackColor = true;
             this.btnPromedios.Click += new System.EventHandler(this.btnPromedios_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1343, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(44, 51);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 144;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // EditarNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -646,6 +659,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(1503, 832);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnPromedios);
             this.Controls.Add(this.groupBox5);
@@ -669,6 +683,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.IconMin)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -726,5 +741,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn parcial;
         private System.Windows.Forms.DataGridViewTextBoxColumn final;
         private System.Windows.Forms.DataGridViewTextBoxColumn promedio;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

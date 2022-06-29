@@ -451,5 +451,18 @@ namespace ProyectoFinal
                 txtDocente.Text = "Raine W.";
             }
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Para poder registra alumnos al sistemas debes de ingresar:\n\n" +
+                            "* Apellido paterno y materno\n" +
+                            "* Nombre\n" +
+                            "* Curso\n" +
+                            "* Seleccionar una sección aleatoriamente\n" +
+                            "* Docente según el curso\n" +
+                            "* Turno\n\n" +
+                            "Una vez llenado los datos del alumno debe de presionar el botón 'Registrar'.\n\n" +
+                            "- Botón Cargar Registro: Puedes cargar registros de otros grados.", "Información");
+        }
     }
 }

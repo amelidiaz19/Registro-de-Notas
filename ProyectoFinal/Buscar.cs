@@ -342,5 +342,16 @@ namespace ProyectoFinal
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Para buscar alumnos en el sistema debes de seleccionar si deseas buscar por:\n" +
+                "* Area\n" +
+                "* Seccion\n" +
+                "* Turno\n" +
+                "* Nombre\n\n"+
+                "- Podrás ver la información de alumno que selecciones.\n" +
+                "- Para volver a ver el registro completo, presiona en el botón 'Ver Registro'.", "Información");
+        }
     }
 }

@@ -74,5 +74,10 @@ namespace ProyectoFinal
             lbFecha.Text = DateTime.Now.ToLongDateString();
             lblHora.Text = DateTime.Now.ToString("HH:mm:ssss");
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Para abrir los registros de los grados debes selecciona el registro del grado que deseas abrir.", "Información");
+        }
     }
 }

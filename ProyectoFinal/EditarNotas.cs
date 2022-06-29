@@ -543,5 +543,15 @@ namespace ProyectoFinal
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Para poder editar las notas de los alumnos debes de seleccionar una celda de la fila que deseas editar.\n\n" +
+                            "Puedes editar el examen 1, examen 2, examen parcial y final, cuando realizas el cambio de notas el promedio también debe cambiar.\n" +
+                            "Por eso una vez realizado los cambios debes de seleccionar una celda de la fila que editaste y " +
+                            "seguido de eso presionar el botón 'Calcular Nuevo Promedio'.\n\n" +
+                            "En filtros: puedes ordenar de forma ascendente, descendente y visualizar el promedio del grado, " +
+                            "para poder realizar los filtros una vez elijas en el ComboBox que deseas hacer debes de presionar 'Aplicar Filtro'.", "Información");
+        }
     }
 }

@@ -191,5 +191,11 @@ namespace ProyectoFinal
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Para poder borrar alumnos del sistema debes de seleccionar una celda de la fila que deseas eliminar," +
+                            "seguido de eso presionar el botón 'Borrar'.", "Información");
+        }
     }
 }

@@ -75,5 +75,15 @@ namespace ProyectoFinal
             this.Close();
             Program.formPrincipal.Show();
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("En el sistema puedes:\n\n" +
+                            "* Registrar alumnos al sistema.\n" +
+                            "* Editar notas de los alumnos.\n" +
+                            "* Buscar alumnos en el sistema.\n" +
+                            "* Borrar alumnos del sistema.\n" +
+                            "* Ver datos estadisticos de los grados.", "Información");
+        }
     }
 }
