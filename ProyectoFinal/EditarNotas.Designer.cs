@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarNotas));
             this.dataGridViewNotas = new System.Windows.Forms.DataGridView();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -217,8 +217,8 @@
             // 
             // promedio
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.promedio.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
+            this.promedio.DefaultCellStyle = dataGridViewCellStyle2;
             this.promedio.HeaderText = "Promedio";
             this.promedio.MinimumWidth = 6;
             this.promedio.Name = "promedio";
@@ -230,7 +230,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1095, 24);
+            this.label2.Location = new System.Drawing.Point(1095, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 27);
             this.label2.TabIndex = 134;
@@ -243,11 +243,14 @@
             this.cbOrdenar.Items.AddRange(new object[] {
             "Ascendente",
             "Descendente",
-            "Sumar Notas"});
-            this.cbOrdenar.Location = new System.Drawing.Point(1100, 67);
+            "Promedio Sección A",
+            "Promedio Sección B",
+            "Promedio Sección C",
+            "Promedio Sección D"});
+            this.cbOrdenar.Location = new System.Drawing.Point(1100, 112);
             this.cbOrdenar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbOrdenar.Name = "cbOrdenar";
-            this.cbOrdenar.Size = new System.Drawing.Size(216, 35);
+            this.cbOrdenar.Size = new System.Drawing.Size(287, 35);
             this.cbOrdenar.TabIndex = 135;
             this.cbOrdenar.SelectedIndexChanged += new System.EventHandler(this.cbOrdenar_SelectedIndexChanged);
             this.cbOrdenar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbOrdenar_KeyPress);
@@ -255,7 +258,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(184)))), ((int)(((byte)(48)))));
-            this.panel2.Location = new System.Drawing.Point(1318, 119);
+            this.panel2.Location = new System.Drawing.Point(1374, 162);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(13, 73);
@@ -269,7 +272,7 @@
             this.btnAplicar.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAplicar.ForeColor = System.Drawing.Color.White;
             this.btnAplicar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAplicar.Location = new System.Drawing.Point(1100, 119);
+            this.btnAplicar.Location = new System.Drawing.Point(1156, 162);
             this.btnAplicar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAplicar.Name = "btnAplicar";
             this.btnAplicar.Size = new System.Drawing.Size(231, 73);
@@ -488,7 +491,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(571, 46);
+            this.label16.Location = new System.Drawing.Point(571, 55);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(121, 27);
             this.label16.TabIndex = 131;

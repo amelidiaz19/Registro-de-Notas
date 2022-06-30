@@ -401,7 +401,19 @@ namespace ProyectoFinal
             {
                 btnAplicar.Enabled = true;
             }
-            else if(indice.ToString() == "2") //Suma
+            else if(indice.ToString() == "2") //A
+            {
+                btnAplicar.Enabled = true;
+            }
+            else if (indice.ToString() == "3") //B
+            {
+                btnAplicar.Enabled = true;
+            }
+            else if (indice.ToString() == "4") //C
+            {
+                btnAplicar.Enabled = true;
+            }
+            else if (indice.ToString() == "5") //D
             {
                 btnAplicar.Enabled = true;
             }
@@ -429,7 +441,6 @@ namespace ProyectoFinal
                 }
             }
         }
-
         public void Descendente()
         {
             for (int x = 0; x < dataGridViewNotas.Rows.Count - 1; x++)
@@ -463,30 +474,61 @@ namespace ProyectoFinal
             {
                 Ascendente();
             }
-            else if (cbOrdenar.Text == "Sumar Notas")
+            else if (cbOrdenar.Text == "Promedio Sección A")
             {
-                SumaNotas();
+                SumaNotas(dataGridViewNotas, "A");
+            }
+            else if (cbOrdenar.Text == "Promedio Sección B")
+            {
+                SumaNotas(dataGridViewNotas, "B");
+            }
+            else if (cbOrdenar.Text == "Promedio Sección C")
+            {
+                SumaNotas(dataGridViewNotas, "C");
+            }
+            else if (cbOrdenar.Text == "Promedio Sección D")
+            {
+                SumaNotas(dataGridViewNotas, "D");
             }
         }
 
-        public void SumaNotas()
+        //Metodo Suma
+        public void SumaNotas(DataGridView dgv, string seccion)
         {
-            int longitud = dataGridViewNotas.RowCount;
+            int longitud = dgv.RowCount;
 
             float[] num = new float[longitud];
             float suma = 0;
+            float contador = 0;
 
             for (int i = 0; i < longitud; i++)
             {
-                num[i] = float.Parse(dataGridViewNotas.Rows[i].Cells[12].Value.ToString());
+                if (seccion == dgv.Rows[i].Cells[5].Value.ToString())
+                {
+                    num[i] = float.Parse(dgv.Rows[i].Cells[12].Value.ToString());
+                    contador++;
+                }
             }
 
             suma = RecursividadSuma(0, num);
 
-            //promedio grado
-            MessageBox.Show("El promedio del grado es: " + (suma / longitud).ToString("0.00"), "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            float resultado;
+
+            if((suma/contador) <= 0 || (suma / contador).ToString() == "NaN")
+            {
+                resultado = 0.00f;
+                //promedio grado
+                MessageBox.Show("No hay alumnos registrados en este grado.\nEl promedio del grado es: " + resultado, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                resultado = suma / contador;
+                //promedio grado
+                MessageBox.Show("El promedio del grado es: " + resultado.ToString("0.00"), "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
+        //Recursividad
         public float RecursividadSuma(int a, float [] b)
         {
             if (a >= b.Length) return 0;
